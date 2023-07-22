@@ -1,0 +1,112 @@
+  .boat {
+    width: 0; 
+    height: 0; 
+    position:absolute; /* Using of position absolute makes the child objects to be animated */
+    top:250px;
+    left:8%;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 50px solid #FADE8B;
+    animation: 5s linear infinite alternate slidein; /* Animation of boat of name slidein */
+  }
+  .boat::after {
+    position:absolute;
+    content:"";
+    width:162px;
+    height:44px;
+    bottom:-100px;
+    left:-81px;
+    background:#FADE8B;
+  }
+  .boat::before {
+    position:absolute;
+    content:"";
+    z-index:5;
+    width: 0; 
+    height: 0; 
+    bottom:-100px;
+    left:38px;
+    border-left: 44px solid transparent;
+    border-right:44px solid transparent;
+    border-bottom: 44px solid white;
+    filter:drop-shadow(-164px 0px white);
+  }
+.sea {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:351px;
+    background-color: skyblue;
+}
+.fish {
+    position: absolute;
+    top:15%;
+    left:0%;
+    width: 40px;
+    height: 40px;
+    background-color: green;
+    border-radius: 40px 0 40px 0px;
+    rotate: +45deg;
+    animation: 10s linear infinite slidein2; /* Animation of fish */
+}
+.eye {
+    position: absolute;
+    width:5px;
+    height: 5px;
+    border-radius: 50%;
+    top: 6px;
+    left:28px;
+    background-color: black;
+    
+
+}
+.fish::after {
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 20px;
+    border: 18px;
+    border-style: solid;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    border-top-color: transparent;
+    border-right-color: green;
+    transform: rotate(140deg);
+    left:-10px;
+    top:4px;
+}
+@keyframes slidein {
+    0% {
+        left:8%;
+    }
+    25% {
+        left:26%;
+    }
+    50%{
+        left:44%;
+    }
+    75% {
+        left:62%;
+    }
+    100% {
+        left:80%;
+    }
+}
+
+@keyframes slidein2 {
+    0% {
+        left:0%;
+    }
+    25% {
+        left:25%;
+    }
+    50%{
+        left:50%;
+    }
+    75% {
+        left:75%;
+    }
+    100% {
+        left:100%;
+    }
+}
