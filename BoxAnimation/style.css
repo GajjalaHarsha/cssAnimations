@@ -1,0 +1,87 @@
+* {
+    box-sizing:border-box;
+  }
+  .l, .k, .m, .n, .o, .p, .q, .r, .s{
+    border:2px solid red;
+    animation:animate 5s linear alternate  infinite;
+  }
+  .k, .m, .n, .o, .p, .q, .r, .s{
+    left:-7px;
+    top:-7px;
+    position:absolute;
+    
+  }
+  .l {
+    margin:80px auto;
+    width:20px;
+    height:20px;
+    position:relative;
+  }
+  .k {
+    width:30px;
+    height:30px;
+  }
+  .m {
+    width:40px;
+    height:40px;
+  }
+  .n {
+    width:50px;
+    height:50px;
+  }
+  .o {
+    width:60px;
+    height:60px;
+  /*   animation: animate 5s steps(7) infinite; */
+  }
+  .p {
+    width:70px;
+    height:70px;
+  }
+  .q {
+    width:80px;
+    height:80px;
+  }
+  .r {
+    width:90px;
+    height:90px;
+  }
+  .s {
+    width:100px;
+    height:100px;
+  }
+  @keyframes animate {
+    0% {
+      transform:rotate(0deg);
+    }
+    10% {
+      transform:rotate(18deg);
+    }
+    20% {
+      transform:rotate(36deg);
+    }
+    30% {
+      transform:rotate(54deg);
+    }
+    40% {
+      transform:rotate(72deg);
+    }
+    50% {
+      transform:rotate(90deg);
+    }
+    60% {
+      transform:rotate(72deg);
+    }
+    70% {
+      transform:rotate(54deg);
+    }
+    80% {
+      transform:rotate(36deg);
+    }
+    90% {
+      transform:rotate(18deg);
+    }
+    100% {
+      transform:rotate(0deg);
+    }
+  }

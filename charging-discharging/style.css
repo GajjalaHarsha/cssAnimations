@@ -1,0 +1,60 @@
+h1 {
+    font-size:10px;
+    width:150px;
+    margin:15px auto;
+  }
+  .chargingsymbol{
+    width:80px;
+    height:30px;
+    margin:25px auto;
+    position:relative;
+    border:2px solid black;
+    background:white;
+  }
+  .chargingsymbol::before {
+    content:"";
+    top:5%;
+    left:5%;
+    width:10%;
+    height:86%;
+    position:absolute;
+    background:black;
+    animation:animate 4s forwards  linear infinite;
+  }
+  .chargingsymbol::after {
+    content:"";
+    width:5px;
+    height:5px;
+    border-right:2px solid black;
+    border-bottom:2px solid black;
+    border-top:2px solid black;
+    border-left:2px solid black;
+    border-radius:50%;
+    top:9px;
+    right:-11%;
+    position:absolute;
+  }
+  @keyframes animate {
+    0% {
+      width:0%;
+    }
+    25% {
+      width:50%;
+    }
+    50%{
+      width:90%;
+    }
+    60% {
+      width:90%;
+    }
+    75% {
+      width:50%;
+    }
+    90% {
+      width:0%;
+    }
+    100% {
+      width:0%;
+    }
+    
+  }

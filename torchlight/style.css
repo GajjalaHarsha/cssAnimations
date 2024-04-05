@@ -1,0 +1,46 @@
+:root {
+    --gradient:linear-gradient(
+         30deg,  #845ec2,
+              #d65db1,
+              #ff6f91,
+              #ff9671,
+              #ffc75f,
+              #f9f871
+    );
+  }
+  body {
+    background:black;
+  }
+  .circle {
+    width:140px;
+    height:140px;
+    border:2px solid black;
+    background-image:var(--gradient);
+    clip-path: polygon(0% 0%, 0% 100%, 100% 50%);
+    background-size:700%;
+    animation:shadow 15s infinite alternate;
+  }
+  .torch {
+    width:70px;
+    height:70px;
+    margin:-102px 143px;
+    background:white;
+    clip-path: polygon(34% 37%, 100% 37%, 100% 54%, 36% 55%, 0 75%, 0 14%);
+  }
+  @keyframes shadow {
+    0% {
+      baackground-position:left;
+    }
+    25% {
+      background-position:bottom;
+    }
+    50% {
+      background-position:right;
+    }
+    75% {
+      background-position:center;
+    }
+    100%{
+      background-position:top;
+    }
+  }
